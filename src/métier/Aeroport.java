@@ -6,7 +6,7 @@ public class Aeroport {
     private String ville;
     private String pays;
 
-    public Aeroport(String id, String nom, String ville, String pays){
+    public Aeroport(int id, String nom, String ville, String pays){
 
         this.id = id;
         this.nom = nom;

@@ -7,7 +7,7 @@ public class Reservation {
     private Date dateReservation;
     private String statut;
 
-    public Reservation(String numeroReservation, Passager dateReservation, Vol statut) {
+    public Reservation(int numeroReservation, Date dateReservation, String statut) {
 
         this.numeroReservation = numeroReservation;
         this.dateReservation = dateReservation;
