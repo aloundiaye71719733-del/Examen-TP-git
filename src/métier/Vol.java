@@ -1,15 +1,13 @@
 package métier;
 
-import java.util.Date;
-
 public class Vol {
     private String numeroVol;
-    private Date dateDepart;
+    private String dateDepart;
     private String heureDepart;
     private String heureArrivee;
     private double prix;
 
-    public Vol(String numeroVol, Date dateDepart, String heureDepart, String heureArrivee, double prix){
+    public Vol(String numeroVol, String dateDepart, String heureDepart, String heureArrivee, double prix, Aeroport a0, Aeroport a1, Avion a){
 
         this.numeroVol = numeroVol;
         this.dateDepart = dateDepart;
@@ -20,6 +18,15 @@ public class Vol {
 
     }
 
+    public Vol(int i, int i1, String time, String time1, int prix, Aeroport a1, Aeroport a2, Avion avion) {
+    }
+
+    public Vol(String numero, String date, String hDep, String hArr, double prix) {
+    }
+
+    public static void afficherVol() {
+    }
+
     public String getNumeroVol() {
         return numeroVol;
     }
@@ -28,11 +35,11 @@ public class Vol {
         this.numeroVol = numeroVol;
     }
 
-    public Date getDateDepart() {
+    public String getDateDepart() {
         return dateDepart;
     }
 
-    public void setDateDepart(Date dateDepart) {
+    public void setDateDepart(String dateDepart) {
         this.dateDepart = dateDepart;
     }
 
@@ -70,4 +77,6 @@ public class Vol {
                 ", prix=" + prix +
                 '}';
     }
+
+
 }

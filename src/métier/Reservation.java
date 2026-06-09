@@ -7,11 +7,14 @@ public class Reservation {
     private Date dateReservation;
     private String statut;
 
-    public Reservation(int numeroReservation, Date dateReservation, String statut) {
+    public Reservation(String numeroReservation, Passager dateReservation, Vol statut) {
 
         this.numeroReservation = numeroReservation;
         this.dateReservation = dateReservation;
         this.statut = statut;
+    }
+
+    public Reservation(int r001, Passager p1, Vol vol) {
     }
 
     public int getNumeroReservation() {
@@ -43,5 +46,10 @@ public class Reservation {
         return "Reservation{" +
                 "statut='" + statut + '\'' +
                 '}';
+    }
+
+    public String confirmer() {
+        statut = confirmer();
+        return null;
     }
 }

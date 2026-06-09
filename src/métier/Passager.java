@@ -7,12 +7,15 @@ public class Passager {
     private String telephone;
     private String email;
 
-    public Passager(int id, String nom, String prenom, String telephone, String email){
+    public Passager(String nom, String prenom){
 
         this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.email = email;
+    }
+
+    public Passager(int p001, String alouNdiaye) {
     }
 
     public int getId() {
